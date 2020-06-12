@@ -1,0 +1,78 @@
+html, body{margin: 0; height: 100%;}
+body{background: #265A7F; display: flex; justify-content: center; align-items: center;}
+@font-face {font-family: cakep; src: url('../fonts/cakep.ttf');}
+div{margin: auto;}
+.bulat{background: white; border-radius: 50%; position: relative;}
+.k1{top: 25px; width: 125px; height: 115px; z-index: 10; box-shadow: inset 9px -0px rgba(0, 0, 0, 0.1)}
+.k2{top: -4%; width: 180px; height: 150px; z-index: 5; box-shadow: inset 20px 5px rgba(0, 0,0, 0.1);}
+.bingkai{width: 350px; height: 325px; position: relative; background: #30313B; border: 5px solid grey; padding-bottom: 100px; padding-top: 50px;}
+
+.topialas{border-radius: 50%; width: 150px; height: 70px;position: absolute; background: #015361; top: 90px; left: 100px; border-top: 3px solid silver;}
+.topiatas{border-radius: 10px 10px 1px 1px; width: 79px; height: 60px; position: relative; background: #007382; top:35px; box-shadow: inset 44px 1px #015462;}
+.dtopi{width: 79px; height: 40px; background:#007382; position: relative; top: -35px; border-radius: 50%; box-shadow: inset 44px 18px #015462;}
+.dtopi2{width: 79px; height: 20px; background: #F73D24; position: relative; top: -25px; border-radius: 50% 50% 1% 1%; box-shadow: inset 44px -7px #D71D20;}
+
+.mata{border-radius: 50%; width: 12px; height: 12px; background: black; display: inline-block; position: absolute; background-image: radial-gradient(white, black 35%);}
+.mata:nth-child(1){left: 40px; top: 24px;}
+.mata:nth-child(2){right: 40px; top: 24px;}
+
+.segitiga{width: 0; height: 0; border-left: 10px solid #ed9121; border-top: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid transparent;}
+.hs{position: absolute; left: 101px; top: 39.8px; transform: scale(5, 1) rotate(357deg); border-radius: 50%;}
+
+.hidung{border-radius: 100%; width: 25px; height: 15px; background: #ed9121; top: 43px; left: 58.7px; position: absolute;}
+
+.mulut{background: white; width: 60px; height: 17px; border-radius: 1px 1px 100px 100px; position: relative; top: 65px; border-left: 10px dotted #363231; border-right: 10px dotted #363231; border-bottom: 10px dotted #363231; border-top: 0 solid transparent;} 
+.mulutp{width: 25px; height: 20px; background: white; position: absolute; top: 50px; left: 10px; z-index: 15;}
+/*.mulut{background: white; width: 67px; height: 35px; border-radius: 1px 1px 50px 50px; position: relative; top: 60px; border-left: 3px dashed black; border-right: 3px dashed black; border-bottom: 3px dashed black; border-top: 0 solid transparent;} Ini mulutnya garis*/
+
+.selendang{width: 150px; height: 32px; border-radius: 100% 100% 20px 20px;
+border: 0px solid #000000; position: relative; top: 9px; background: #D51E20; transform: rotate(180deg); box-shadow: inset 40px 7px #F53C1D;}
+.ASelendang{width: 20px; height: 30px; background: #F53C1D; position: relative; left: 30px; top: 2px; transform: rotate(25deg);}
+.ASelendang:after{content: ''; width: 25px; height: 15px; border-radius: 50%; background: white; top: 25px; right: 0.0px; position: absolute;}
+.ASelendang2{width: 20px; height: 45px; background: #F53C1D; position: relative; left: 55px; top: -28px; transform: rotate(340deg);}
+.ASelendang2:after{content: ''; width: 27px; height: 15px; border-radius: 50%; background: white; top: 34px; right: -2px; position: absolute;}
+
+.kancing{border-radius: 50%; width: 12px; height: 12px; background: #342E2E; top: -40px; position: relative; margin-bottom: 10px;}
+.tangan{width: 65px; height: 5px; border-radius: 20px; background: #A35044; position: absolute; bottom: 90px;}
+.tKanan{left: -60px}
+.tKanan:nth-child(1):after{content: ''; width: 23px; height: 5px; position: absolute; background: #A84c41; border-radius: 20px; transform: rotate(45deg); top: -9px; left: 2px;}
+.tKanan:nth-child(2):after{content: ''; width: 23px; height: 5px; position: absolute; background: #A84c41; border-radius: 20px; transform: rotate(-45deg); top: 9px;  left: 2px;}
+.tKiri{right: -60px;}
+.tKiri:nth-child(1):after{content: ''; width: 23px; height: 5px; position: absolute; background: #A84c41; border-radius: 20px; transform: rotate(135deg); top: -9px; right: 2px;}
+.tKiri:nth-child(2):after{content: ''; width: 23px; height: 5px; position: absolute; background: #A84c41; border-radius: 20px; transform: rotate(-135deg); top: 9px;  right: 2px;}
+
+.daratan{position: absolute;}
+.salju1{border-radius: 1% 100% 1% 1%; top: 330px; bottom: 0; right: 0; left: 0; background: #ECECEC;}
+.salju2{border-radius: 100% 1% 1% 1%; top: 300px; bottom: 0; right: 0; left: 2px; z-index: 1; background: #FDFDFD; margin-top: 20px}
+
+.mc{color: skyblue; font-size: 70px; text-align: center; font-family: cakep; margin-top: 10px;}
+
+.conS{position: relative; animation: lompat 2s ease infinite alternate;}
+@keyframes lompat{
+    0%{top: 0px;}
+    60%{top: 0px;}
+    100%{top: -50px;}
+}
+@keyframes topi-terbang{
+    0%{top: 34px;}
+    60%{top: 34px;}
+    100%{top: -76px;}
+}
+.bayanganB{position: relative; animation: kampret 2s ease infinite alternate; background: #EDEDED; height: 23px; border-radius: 100%; bottom: 14px; z-index: 4;}
+@keyframes kampret{
+    0%{width: 180px;}
+    60%{width: 180px;}
+    100%{width: 90px;}
+}
+@keyframes bye-byeKa{
+    50%{transform: rotate(60deg);}
+    60%{transform: rotate(55deg);}
+    100%{transform: rotate(55deg);}
+}
+@keyframes bye-byeKi{
+    50%{transform: rotate(300deg);}
+    60%{transform: rotate(305deg);}
+    100%{transform: rotate(305deg);}
+}
+
+/*Animasi dinonaktifkan dengan menghilangkan huruf terakhhir dibelakangnya. Animasi tangan gunakan ganti top dan rightnya*/
